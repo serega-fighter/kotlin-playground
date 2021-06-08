@@ -2,6 +2,12 @@ package com.serega.basic
 
 class TestClass {
 
+    lateinit var subject: String
+
+    fun init() {
+        subject = "subject was initialized"
+    }
+
     var stringRepresentation: String
         get() = this.toString()
         set(value) {
@@ -15,4 +21,7 @@ fun main() {
     f.stringRepresentation = "a"
 
     println("This is a string repr ${f.stringRepresentation}")
+
+    f.init()
+    println(f.subject)
 }
