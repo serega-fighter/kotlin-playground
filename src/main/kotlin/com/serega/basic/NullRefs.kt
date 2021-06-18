@@ -1,14 +1,14 @@
 package com.serega.basic
 
-private data class Box(val x: Int) {
+private data class IntBox(val x: Int) {
 
 }
 
 fun main() {
 
-    val nullRef: Box? = null
+    val nullRef: IntBox? = null
     println(nullRef?.x)
 
-    val nonNullRef: Box? = Box(5)
+    val nonNullRef: IntBox? = IntBox(5)
     println(nonNullRef?.x)
 }
