@@ -11,4 +11,5 @@ fun main() {
     val fiveDays = 5.days
     println(tenDays > fiveDays)
 
+    println("${(36.hours + 30.minutes - 6.milliseconds).inWholeDays} whole days")
 }
