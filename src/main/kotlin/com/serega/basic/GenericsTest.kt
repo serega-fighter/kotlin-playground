@@ -1,5 +1,7 @@
 package com.serega.basic
 
+import kotlin.reflect.typeOf
+
 class Box<T>(t: T) {
     var value = t
 }
@@ -18,9 +20,14 @@ class Producer<in T> {
     }
 }
 
+inline fun <reified T> renderType(): String {
+    val type = typeOf<T>()
+    return type.toString()
+}
+
 fun main() {
-    val strSource = Source("ABC")
-    val anySource: Source<Any> = strSource
-
-
+    val fromExplicitType = typeOf<Int>()
+    println(fromExplicitType)
+    val fromReifiedType = renderType<List<Int>>()
+    println(fromReifiedType)
 }
