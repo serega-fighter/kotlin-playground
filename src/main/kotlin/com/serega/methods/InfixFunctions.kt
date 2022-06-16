@@ -1,4 +1,4 @@
-package com.serega.basic
+package com.serega.methods
 
 infix fun Int.mult(x: Int): Int {
     return this * x

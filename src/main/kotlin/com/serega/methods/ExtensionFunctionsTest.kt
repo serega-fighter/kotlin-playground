@@ -1,4 +1,4 @@
-package com.serega.basic
+package com.serega.methods
 
 
 /**
