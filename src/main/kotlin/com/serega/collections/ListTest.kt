@@ -16,4 +16,8 @@ fun main() {
 
     mutableList.removeIf { it == 2 }
     println(mutableList)
+
+    for ((index, value) in mutableList.withIndex()) {
+        println("the element at $index is $value")
+    }
 }
