@@ -12,7 +12,9 @@ fun MutableList<Int>.swap(index1: Int, index2: Int) {
     this[index2] = tmp
 }
 
-fun Any?.toString(): String {
+class X {}
+
+fun Any?.toStringExt(): String {
     if (this == null) return "null"
     // after the null check, 'this' is autocast to a non-null type, so the toString() below
     // resolves to the member function of the Any class
@@ -23,4 +25,9 @@ fun main() {
     val list = mutableListOf(1, 2, 3)
     list.swap(0, 2)
     println(list)
+
+    val z = X()
+    println(z.toStringExt())
+    val z2 = null
+    println(z2.toStringExt())
 }
