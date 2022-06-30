@@ -1,4 +1,4 @@
-package com.serega.html
+package com.serega.dsl
 
 import kotlinx.html.*
 import kotlinx.html.stream.createHTML
