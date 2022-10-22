@@ -1,4 +1,4 @@
-package com.serega.basic
+package com.serega.lang.basic
 
 
 class TestPair(private val field1: Int, private val field2: String) {

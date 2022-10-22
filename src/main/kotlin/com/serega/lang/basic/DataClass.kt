@@ -1,4 +1,4 @@
-package com.serega.basic
+package com.serega.lang.basic
 
 data class DataClass(val name: String, val age: Int) {
 

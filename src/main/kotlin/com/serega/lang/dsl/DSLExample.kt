@@ -1,4 +1,4 @@
-package com.serega.dsl
+package com.serega.lang.dsl
 
 interface Element {
 

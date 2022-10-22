@@ -1,4 +1,4 @@
-package com.serega.collections
+package com.serega.lang.collections
 
 fun main() {
 

@@ -1,4 +1,4 @@
-package com.serega.basic
+package com.serega.lang.basic
 
 fun <T> printAll(vararg ts: T) {
     ts.forEach { println(it) }

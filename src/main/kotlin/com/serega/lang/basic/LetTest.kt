@@ -1,4 +1,4 @@
-package com.serega.basic
+package com.serega.lang.basic
 
 fun customPrint(x: String) {
     print("***$x***")
