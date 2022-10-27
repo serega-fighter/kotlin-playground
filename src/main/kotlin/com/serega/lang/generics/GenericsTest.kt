@@ -1,4 +1,4 @@
-package com.serega.lang.basic
+package com.serega.lang.generics
 
 import kotlin.reflect.typeOf
 
