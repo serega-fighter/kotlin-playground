@@ -11,5 +11,5 @@ fun safeToString(obj: Any?) {
 }
 
 fun main() {
-    
+
 }
