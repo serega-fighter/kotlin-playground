@@ -7,6 +7,19 @@ fun main() {
     val s = createHTML().
         html {
             body {
+                table {
+                    tr {
+                        td { + "ABC"}
+                        td { + "CDE"}
+                        /*
+                        compilation err due to @dslmarker
+                        tr {
+                            td { + "ABC"}
+                            td { + "CDE"}
+                        }
+                        */
+                    }
+                }
                 div {
                     b {
                         + "AAAA"
