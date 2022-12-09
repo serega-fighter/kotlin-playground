@@ -21,6 +21,8 @@ fun Any?.toStringExt(): String {
     return toString()
 }
 
+fun Iterable<Int>.product() = fold(1) { acc, i -> acc * i }
+
 fun main() {
     val list = mutableListOf(1, 2, 3)
     list.swap(0, 2)
@@ -30,4 +32,7 @@ fun main() {
     println(z.toStringExt())
     val z2 = null
     println(z2.toStringExt())
+
+    val zl = listOf(5, 6, 1, 10)
+    println(zl.product())
 }
