@@ -1,4 +1,4 @@
-package com.serega.lang.perf
+package com.serega.internals
 
 @JvmInline
 value class Weight(val value: Double)
