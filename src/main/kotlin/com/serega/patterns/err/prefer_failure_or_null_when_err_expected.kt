@@ -1,4 +1,4 @@
-package com.serega.lang.err
+package com.serega.patterns.err
 
 /*
 This is why the rule is that we should prefer
