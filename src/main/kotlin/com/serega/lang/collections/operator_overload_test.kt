@@ -9,8 +9,6 @@ class Test(val value: Int) {
     override fun toString(): String {
         return "Test(value=$value)"
     }
-
-    
 }
 
 fun main() {
