@@ -11,6 +11,8 @@ fun print(p: Person) {
 fun main() {
 
     println(Person("A", 25) == Person("B", 26))
+
     println(Person("A", 25).copy())
+
     print(Person("ABC", 40))
 }

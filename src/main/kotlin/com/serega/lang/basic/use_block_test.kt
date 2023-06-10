@@ -5,7 +5,7 @@ import java.io.Closeable
 import java.io.File
 import java.io.FileReader
 
-public inline fun <T : Closeable?, R> T.use2(block: (T) -> R): R {
+inline fun <T : Closeable?, R> T.use2(block: (T) -> R): R {
     return block(this)
 }
 
