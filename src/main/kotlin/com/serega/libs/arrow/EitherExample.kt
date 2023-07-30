@@ -179,12 +179,13 @@ class InMemoryUserRepository : UserRepository {
     override fun update(user: User): User {
         val existingUser = findBy(user.id) ?: error("User does not exist.")
         userList.remove(existingUser)
-        val updatedUser = existingUser.copy(
+/*        val updatedUser = existingUser.copy(
             firstName = user.firstName,
             lastName = user.lastName,
             birthDate = user.birthDate,
             address = user.address
-        )
+        )*/
+        val updatedUser = existingUser
         userList.add(
             updatedUser
         )
